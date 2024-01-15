@@ -1,0 +1,119 @@
+﻿@model UserModel
+@{
+    ViewData["Title"] = "Create Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form id="registrationForm" enctype="multipart/form-data" onsubmit="submitForm(event)">
+    @Html.AntiForgeryToken()
+    <input type="hidden" id="Id" name="Id" value="@Model?.Id" />
+
+    <div class="row mb-3">
+        <label for="Username" class="col-sm-2 col-form-label">Username</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" id="Username" name="Username" required value="@Model?.Username" autocomplete="off" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="Password" class="col-sm-2 col-form-label">Password</label>
+        <div class="col-sm-6">
+            <input type="Password" class="form-control" id="Password" name="Password" required value="@Model?.Password" />
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <label for="Fruits" class="col-sm-2 col-form-label">Fruits</label>
+        <div class="col-sm-6">
+            @Html.DropDownListFor(model => model.Fruits, new SelectList(new List<SelectListItem>
+            {
+            new SelectListItem { Text = "Choose fruits", Value = "" },
+            new SelectListItem { Text = "Orange", Value = "Orange", Selected = Model?.Fruits == "Orange" },
+            new SelectListItem { Text = "Apple", Value = "Apple", Selected = Model?.Fruits == "Apple" }
+            }, "Value", "Text"), new { @class = "form-select", required = "required" })
+        </div>
+    </div>
+
+    <fieldset class="row mb-3">
+        <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+        <div class="col-sm-10">
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="male" name="gender" value="Male" @(Model?.Gender == "Male" ? "checked" : "") />
+                <label class="form-check-label" for="male">Male</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="female" name="gender" value="Female" @(Model?.Gender == "Female" ? "checked" : "") />
+                <label class="form-check-label" for="female">Female</label>
+            </div>
+        </div>
+    </fieldset>
+
+    <div class="row mb-3">
+        <label class="col-form-label col-sm-2 pt-0">Interests</label>
+        <div class="col-sm-10">
+            @foreach (var interest in new List<string> { "Sports", "Music", "Movies" })
+            {
+                <div class="form-check form-check-inline">
+                    <input type="checkbox" class="form-check-input" id="interest@interest" name="interests" value="@interest" checked='@Model?.InterestsString?.Contains(interest)' />
+                    <label class="form-check-label" for="interest@interest">@interest</label>
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <label class="col-form-label col-sm-2 pt-0" for="profileImage">Profile Image</label>
+        <div class="col-sm-6">
+            <input type="file" class="form-control" id="profileImage" name="profileImage" accept="image/*" />
+
+            @if (!string.IsNullOrEmpty(Model?.ImagePath))
+            {
+                <img src="/@Model.ImagePath" alt="Profile Image" width="50" height="50" />
+            }
+        </div>
+    </div>
+
+   @*<div class="row mb-3">
+        <label for="SelectedStateId" class="col-sm-2 col-form-label">State</label>
+        <div class="col-sm-6">
+            @Html.DropDownListFor(model => model.SelectedStateId, new SelectList(Model.States, "StateId", "Name"), "Choose state", new { @class = "form-select", id = "stateDropdown" })
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <label for="SelectedCityId" class="col-sm-2 col-form-label">City</label>
+        <div class="col-sm-6">
+            @Html.DropDownListFor(model => model.SelectedCityId, new SelectList(Model.Cities, "CityId", "Name"), "Choose city", new { @class = "form-select",id = "cityDropdown" })
+        </div>
+    </div>*@
+
+    <div class="row mb-3">
+        <div class="col-sm-4">
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+    </div>
+
+</form>
+
+
+@section scripts {
+    <script>
+        var createOreditURL = '@Url.Action("Create","User")';
+
+        $(document).ready(function () {
+
+            $("#stateDropdown").change(function () {
+                var stateId = $(this).val();
+                $.getJSON("/User/GetCitiesByStateId",
+                    { stateId: stateId },
+                    function (data) {
+                        var items = "<option value=''>Select City</option>";
+                        $.each(data, function (index, city) {
+                            items += "<option value='" + city.cityId + "'>" + city.name + "</option>";
+                        });
+                        $("#cityDropdown").html(items);
+                    });
+            });
+        });
+    </script>
+    <script src="~/js/master-ajax.js" asp-append-version="true"></script>
+}

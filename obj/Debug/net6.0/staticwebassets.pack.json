@@ -1,0 +1,345 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\RoshanDemo1.bundle.scp.css",
+      "PackagePath": "staticwebassets\\RoshanDemo1.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\Image\\0fc712cc-c71d-4f7f-b774-827e7cca30a7_logo.jpg",
+      "PackagePath": "staticwebassets\\Image\\0fc712cc-c71d-4f7f-b774-827e7cca30a7_logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\Image\\2017e862-5188-48e1-bf10-97cff704b768_logo-new.jpg",
+      "PackagePath": "staticwebassets\\Image\\2017e862-5188-48e1-bf10-97cff704b768_logo-new.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\Image\\2300d7eb-b97b-48ab-b458-c571883b9969_logo.jpg",
+      "PackagePath": "staticwebassets\\Image\\2300d7eb-b97b-48ab-b458-c571883b9969_logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\Image\\26ddfe42-b203-4540-b5e2-5a09da43b542_logo-new.jpg",
+      "PackagePath": "staticwebassets\\Image\\26ddfe42-b203-4540-b5e2-5a09da43b542_logo-new.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\Image\\5b9b7015-c6bc-45aa-904d-e487bf386865_logo.jpg",
+      "PackagePath": "staticwebassets\\Image\\5b9b7015-c6bc-45aa-904d-e487bf386865_logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\Image\\609693f3-8ef4-4137-874b-af0468bbf396_logo-new.jpg",
+      "PackagePath": "staticwebassets\\Image\\609693f3-8ef4-4137-874b-af0468bbf396_logo-new.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\Image\\697486fe-5d20-42da-907f-3d0b55b3806f_logo.jpg",
+      "PackagePath": "staticwebassets\\Image\\697486fe-5d20-42da-907f-3d0b55b3806f_logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\Image\\6c33b099-8e0e-4331-b5ff-f0d51e263f57_logo-new.jpg",
+      "PackagePath": "staticwebassets\\Image\\6c33b099-8e0e-4331-b5ff-f0d51e263f57_logo-new.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\Image\\70802aee-d7a0-455d-825c-fe0c7d74dc30_logo.jpg",
+      "PackagePath": "staticwebassets\\Image\\70802aee-d7a0-455d-825c-fe0c7d74dc30_logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\Image\\8202bae8-1546-4e4a-9b68-84263d8e3469_logo.jpg",
+      "PackagePath": "staticwebassets\\Image\\8202bae8-1546-4e4a-9b68-84263d8e3469_logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\Image\\ad178db6-a072-48a9-a981-13850c578eb5_logo.jpg",
+      "PackagePath": "staticwebassets\\Image\\ad178db6-a072-48a9-a981-13850c578eb5_logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\Image\\b1e5995e-cfd2-4c6b-82e7-661ad69c1403_logo-new.jpg",
+      "PackagePath": "staticwebassets\\Image\\b1e5995e-cfd2-4c6b-82e7-661ad69c1403_logo-new.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\Image\\b9c9c92b-a7c5-4015-a594-412f3cea5b4c_logo.jpg",
+      "PackagePath": "staticwebassets\\Image\\b9c9c92b-a7c5-4015-a594-412f3cea5b4c_logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\Image\\bd32f9a4-3eae-45d3-b52f-56172627c7f8_logo-new.jpg",
+      "PackagePath": "staticwebassets\\Image\\bd32f9a4-3eae-45d3-b52f-56172627c7f8_logo-new.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\Image\\c05b6590-e255-4456-9c47-69d119b1fd55_logo.jpg",
+      "PackagePath": "staticwebassets\\Image\\c05b6590-e255-4456-9c47-69d119b1fd55_logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\Image\\c6eebd9c-ba59-4c73-a022-1d055950e43e_logo.jpg",
+      "PackagePath": "staticwebassets\\Image\\c6eebd9c-ba59-4c73-a022-1d055950e43e_logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\Image\\e29e4963-b1a5-4136-aaff-4c7f172c8eab_logo.jpg",
+      "PackagePath": "staticwebassets\\Image\\e29e4963-b1a5-4136-aaff-4c7f172c8eab_logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\Image\\f17ebc8a-e762-4963-94b5-a3d9c644337b_logo.jpg",
+      "PackagePath": "staticwebassets\\Image\\f17ebc8a-e762-4963-94b5-a3d9c644337b_logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\Image\\ff155ff1-fac6-41d3-bd94-82a1d2a61b01_logo-new.jpg",
+      "PackagePath": "staticwebassets\\Image\\ff155ff1-fac6-41d3-bd94-82a1d2a61b01_logo-new.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\js\\master-ajax.js",
+      "PackagePath": "staticwebassets\\js\\master-ajax.js"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.RoshanDemo1.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.RoshanDemo1.props",
+      "PackagePath": "build\\RoshanDemo1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.RoshanDemo1.props",
+      "PackagePath": "buildMultiTargeting\\RoshanDemo1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.RoshanDemo1.props",
+      "PackagePath": "buildTransitive\\RoshanDemo1.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
