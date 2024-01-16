@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.EntityFrameworkCore.SqlServer.Query.Internal;
+using Newtonsoft.Json;
 using RoshanDemo1.Data;
 using RoshanDemo1.Models;
 
@@ -32,6 +33,8 @@ namespace RoshanDemo1.Controllers
                 States = _dbContext.States.ToList(),
                 Cities = _dbContext.Cities.ToList(),
             };
+            ViewBag.InterestsList = new List<string> { "Sports", "Music", "Movies" };
+            
             return View(model);
         }
 
@@ -63,15 +66,7 @@ namespace RoshanDemo1.Controllers
                 //Here create ralated code if Id=0 
                 if (model.Id == 0 || model.Id == null)
                 {
-                    _dbContext.Users.Add(new UserModel
-                    {
-                        Username = model.Username,
-                        Gender = model.Gender,
-                        InterestsString = model.InterestsString,
-                        ImagePath = model.ImagePath,
-                        Password = model.Password,
-                        Fruits = model.Fruits
-                    });
+                    _dbContext.Users.Add(model);
                 }
                 else
                 {
@@ -81,12 +76,11 @@ namespace RoshanDemo1.Controllers
                     {
                         return NotFound();
                     }
-
-                    //Here we can also use autoapper below code short
-
+                    
                     existingUser.Username = model.Username;
                     existingUser.Gender = model.Gender;
                     existingUser.InterestsString = model.InterestsString;
+                    existingUser.Hobbies = model.Hobbies;
                     existingUser.ImagePath = model.ImagePath;
                     existingUser.Password = model.Password;
                     existingUser.Fruits = model.Fruits;
@@ -111,6 +105,8 @@ namespace RoshanDemo1.Controllers
             {
                 return NotFound();
             }
+            ViewBag.InterestsList = new List<string> { "Sports", "Music", "Movies" };
+
             return View("Create", user);
         }
 

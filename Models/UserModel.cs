@@ -18,6 +18,8 @@ namespace RoshanDemo1.Models
 
         public string InterestsString { get; set; }
 
+        public string? Hobbies { get; set; }
+
         public string? Fruits { get; set; }
 
         [NotMapped]

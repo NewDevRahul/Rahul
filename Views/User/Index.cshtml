@@ -7,6 +7,7 @@
             <th>UserName</th>
             <th>Gender</th>
             <th>Interests</th>
+            <th>Hobbies</th>
             <th>Profile Image</th>
             <th>Fruits</th>
             <th>Action</th>
@@ -19,6 +20,7 @@
                 <td>@user.Username</td>
                 <td>@user.Gender</td>
                 <td>@string.Join(",",user.InterestsString)</td>
+                <td>@string.Join(",",user.Hobbies)</td>
                 <td>
                     @if (!string.IsNullOrEmpty(user.ImagePath))
                     {
