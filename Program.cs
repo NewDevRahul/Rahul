@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 using RoshanDemo1.Data;
 
 var builder = WebApplication.CreateBuilder(args);

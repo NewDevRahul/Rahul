@@ -38,7 +38,7 @@
         <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
         <div class="col-sm-10">
             <div class="form-check">
-                <input type="radio" class="form-check-input" id="male" name="gender" value="Male" @(Model?.Gender == "Male" ? "checked" : "") />
+                <input type="radio" class="form-check-input" id="male" name="gender" required value="Male" @(Model?.Gender == "Male" ? "checked" : "") />
                 <label class="form-check-label" for="male">Male</label>
             </div>
             <div class="form-check">
@@ -51,7 +51,7 @@
     <div class="row mb-3">
         <label class="col-form-label col-sm-2 pt-0">Interests</label>
         <div class="col-sm-6">
-            <select class="form-control" id="InterestsString" name="InterestsString" multiple="multiple">
+            <select class="form-control" id="InterestsString" name="InterestsString" multiple="multiple" required>
                 <!-- Add dynamic options using ViewBag or ViewData -->
                 @foreach (var interest in ViewBag.InterestsList ?? new List<string>())
                 {
@@ -71,13 +71,14 @@
                     <label class="form-check-label" for="hobbies@hobbies">@hobbies</label>
                 </div>
             }
+            <span asp-validation-for="Hobbies" class="text-danger"></span>
         </div>
     </div>
 
     <div class="row mb-3">
         <label class="col-form-label col-sm-2 pt-0" for="profileImage">Profile Image</label>
         <div class="col-sm-6">
-            <input type="file" class="form-control" id="profileImage" name="profileImage" accept="image/*" />
+            <input type="file" class="form-control" id="profileImage" required name="profileImage" accept="image/png, image/gif, image/jpeg" />
 
             @if (!string.IsNullOrEmpty(Model?.ImagePath))
             {
@@ -144,63 +145,7 @@
                 }
             }
         });
-
-
-        function submitForm(event) {
-            event.preventDefault();
-
-            var formData = new FormData();
-            debugger
-
-            formData.append('Id', $('#Id').val());
-            formData.append('Username', $('#Username').val());
-            formData.append('Password', $('#Password').val());
-            formData.append('Fruits', $('#Fruits').val());
-            formData.append('Gender', $("input[name='gender']:checked").val());
-
-            //$("input[name='interests']:checked").each(function () {
-            //    formData.append('Interests', $(this).val());
-            //});
-
-            var valuearray = $("select#InterestsString").val();
-            formData.append('InterestsString', valuearray)
-
-            var hobbiesadd = $("input[name='hobbies']:checked").map(function () {
-                return this.value;
-            }).get().join(",");
-
-            formData.append('Hobbies', hobbiesadd);
-
-            console.log(hobbiesadd);
-
-            // Append the profile image file if selected
-            var profileImage = $('#profileImage')[0].files[0];
-            if (profileImage) {
-                formData.append('profileImage', profileImage);
-            }
-
-            var createOreditURL = '@Url.Action("Create","User")';
-            console.log(formData);
-
-            jQuery.ajax({
-                url: createOreditURL,
-                type: 'POST',
-                contentType: false,
-                processData: false,
-                data: formData,
-                success: function (reponse) {
-                    if (reponse) {
-                        debugger
-                        location.href = "/User";
-                    }
-                },
-                error: function (error) {
-                    console.error(error);
-                }
-            });
-
-        }
-
+        var createOreditURL = '@Url.Action("Create","User")';
 
                 //$(document).ready(function () {
 
@@ -218,5 +163,5 @@
                 //    });
                 //});
     </script>
-    @*  <script src="~/js/master-ajax.js" asp-append-version="true"></script>*@
+     <script src="~/js/master-ajax.js" asp-append-version="true"></script>
     }

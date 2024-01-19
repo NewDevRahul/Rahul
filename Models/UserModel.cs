@@ -18,6 +18,7 @@ namespace RoshanDemo1.Models
 
         public string InterestsString { get; set; }
 
+        [Required(ErrorMessage = "Please select at least one hobby.")]
         public string? Hobbies { get; set; }
 
         public string? Fruits { get; set; }

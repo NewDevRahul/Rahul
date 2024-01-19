@@ -1,8 +1,51 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@model List<QuestionModel>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<form asp-action="SaveAnswers" asp-controller="Home" method="post" >
+    @foreach (var question in Model)
+    {
+        <h4>@question.QuestionText</h4>
+
+        switch (question.QuestionType)
+        {
+            case "RadioButton":
+                foreach (var option in question.Options)
+                {
+                    <label>
+                        <input type="radio" name="selectedOptions" value="@option.OptionId" />
+                        @option.OptionText
+                    </label>
+
+                    <br />
+                }
+                break;
+
+            case "MultiCheckbox":
+                foreach (var option in question.Options)
+                {
+                    <label>
+                        <input type="checkbox" name="selectedOptions" value="@option.OptionId" />
+                        @option.OptionText
+                    </label>
+
+                    <br />
+                }
+                break;
+
+            case "DropDown":
+                <select name="selectedOptions">
+                    @foreach (var option in question.Options)
+                    {
+                        <option value="@option.OptionId">@option.OptionText</option>
+                    }
+                </select>
+
+                <br />
+                break;
+        }
+    }
+
+    <button type="submit">Submit</button>
+</form>
+
+
+ 

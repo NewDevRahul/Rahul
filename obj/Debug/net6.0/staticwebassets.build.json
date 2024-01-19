@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "I86uekbdmSBfO4Iqqt8KadCKpANyARwZEcVFe9QaFIw=",
+  "Hash": "uC+N9/oPsEaObuNSVZvLzROFe3k9RdO2m4USLkm35fw=",
   "Source": "RoshanDemo1",
   "BasePath": "_content/RoshanDemo1",
   "Mode": "Default",
@@ -168,6 +168,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Image\\26ddfe42-b203-4540-b5e2-5a09da43b542_logo-new.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\Image\\3790e81c-f80d-4ae9-9f0a-fcb73465358e_logo-new.jpg",
+      "SourceId": "RoshanDemo1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\",
+      "BasePath": "_content/RoshanDemo1",
+      "RelativePath": "Image/3790e81c-f80d-4ae9-9f0a-fcb73465358e_logo-new.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Image\\3790e81c-f80d-4ae9-9f0a-fcb73465358e_logo-new.jpg"
     },
     {
       "Identity": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\Image\\5b9b7015-c6bc-45aa-904d-e487bf386865_logo.jpg",
