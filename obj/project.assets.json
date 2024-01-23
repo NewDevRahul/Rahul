@@ -1956,9 +1956,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\RoshanDemo1.csproj",
-      "projectName": "RoshanDemo1",
-      "projectPath": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\RoshanDemo1.csproj",
+      "projectUniqueName": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\test.csproj",
+      "projectName": "test",
+      "projectPath": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\test.csproj",
       "packagesPath": "C:\\Users\\ad\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\obj\\",
       "projectStyle": "PackageReference",

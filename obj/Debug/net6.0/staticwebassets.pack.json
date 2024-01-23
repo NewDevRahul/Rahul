@@ -1,8 +1,8 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\RoshanDemo1.bundle.scp.css",
-      "PackagePath": "staticwebassets\\RoshanDemo1.bundle.scp.css"
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\test.bundle.scp.css",
+      "PackagePath": "staticwebassets\\test.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\Image\\0629c3a0-3895-4573-b13b-084899a4d06d_logo.jpg",
@@ -15,6 +15,10 @@
     {
       "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\Image\\1031cb3f-6301-47c5-813d-04c022f9b832_logo.jpg",
       "PackagePath": "staticwebassets\\Image\\1031cb3f-6301-47c5-813d-04c022f9b832_logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\Image\\1be6b23b-e0be-4469-8d49-3d161f533465_logo.jpg",
+      "PackagePath": "staticwebassets\\Image\\1be6b23b-e0be-4469-8d49-3d161f533465_logo.jpg"
     },
     {
       "Id": "C:\\Users\\ad\\Desktop\\Roshan\\RoshanDemo1\\RoshanDemo1\\wwwroot\\Image\\2017e862-5188-48e1-bf10-97cff704b768_logo-new.jpg",
@@ -377,20 +381,20 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.RoshanDemo1.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.test.props",
+      "PackagePath": "build\\test.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.test.props",
+      "PackagePath": "buildMultiTargeting\\test.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.test.props",
+      "PackagePath": "buildTransitive\\test.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.test.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
-    },
-    {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.RoshanDemo1.props",
-      "PackagePath": "build\\RoshanDemo1.props"
-    },
-    {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.RoshanDemo1.props",
-      "PackagePath": "buildMultiTargeting\\RoshanDemo1.props"
-    },
-    {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.RoshanDemo1.props",
-      "PackagePath": "buildTransitive\\RoshanDemo1.props"
     }
   ],
   "ElementsToRemove": []
