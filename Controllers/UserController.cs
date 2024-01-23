@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore.SqlServer.Query.Internal;
 using Newtonsoft.Json;
 using RoshanDemo1.Data;
 using RoshanDemo1.Models;
+using System.Diagnostics.Metrics;
 
 namespace RoshanDemo1.Controllers
 {
@@ -30,9 +31,11 @@ namespace RoshanDemo1.Controllers
         {
             var model = new UserModel
             {
+                Country = _dbContext.Country.ToList(),
                 States = _dbContext.States.ToList(),
-                Cities = _dbContext.Cities.ToList(),
+                Cities = _dbContext.Cities.ToList()
             };
+         
             ViewBag.InterestsList = new List<string> { "Sports", "Music", "Movies" };
             
             return View(model);
@@ -87,6 +90,7 @@ namespace RoshanDemo1.Controllers
                     existingUser.Address= model.Address;
                     existingUser.SelectedStateId= model.SelectedStateId;
                     existingUser.SelectedCityId= model.SelectedCityId;
+                    existingUser.SelectedCountryId= model.SelectedCountryId;
                 }
                 await _dbContext.SaveChangesAsync();
 
@@ -108,8 +112,8 @@ namespace RoshanDemo1.Controllers
             {
                 return NotFound();
             }
-
-            user.States = _dbContext.States.ToList();
+            user.Country = _dbContext.Country.ToList();
+            user.States = _dbContext.States.Where(c => c.CountryId==user.SelectedCountryId).ToList();
             user.Cities= _dbContext.Cities.Where(c => c.StateId == user.SelectedStateId).ToList();
 
             ViewBag.InterestsList = new List<string> { "Sports", "Music", "Movies" };
@@ -146,6 +150,13 @@ namespace RoshanDemo1.Controllers
         {
             var cities = await _dbContext.Cities.Where(c => c.StateId == stateId).ToListAsync();
             return Json(cities);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetStateByCoutryId (int CountryId)
+        {
+            var state = await _dbContext.States.Where(c => c.CountryId == CountryId).ToListAsync();
+            return Json(state);
         }
 
     }

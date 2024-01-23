@@ -12,6 +12,7 @@
         formData.append('Fruits', $('#Fruits').val());
         formData.append('Gender', $("input[name='gender']:checked").val());
         formData.append('Address', $('#Address').val());
+        formData.append('SelectedCountryId', $('#countryDropdown').val());
         formData.append('SelectedStateId', $('#stateDropdown').val());
         formData.append('SelectedCityId', $('#cityDropdown').val());
 

@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using test.Models;
 
 namespace RoshanDemo1.Models
 {
@@ -30,8 +31,12 @@ namespace RoshanDemo1.Models
 
         public int? SelectedStateId { get; set; }
         public int? SelectedCityId { get; set; }
+        public int? SelectedCountryId { get; set; }
 
         public string Address { get; set; }
+
+        [NotMapped]
+        public List<CountryModel>? Country { get; set; }
 
         [NotMapped]
         public List<StateModel>? States { get; set; }

@@ -93,6 +93,13 @@
     </div>
 
     <div class="row mb-3">
+        <label for="SelectedCountryId" class="col-sm-2 col-form-label">Country</label>
+        <div class="col-sm-6">
+            @Html.DropDownListFor(model => model.SelectedCountryId,new SelectList(Model.Country, "CountryId" , "Name"),"Choose country",new{@class = "form-select", id="countryDropdown",data_val="true", required="required"})
+        </div>
+    </div>
+
+    <div class="row mb-3">
         <label for="SelectedStateId" class="col-sm-2 col-form-label">State</label>
         <div class="col-sm-6">
             @Html.DropDownListFor(model => model.SelectedStateId, new SelectList(Model.States, "StateId", "Name"), "Choose state", new { @class = "form-select", id = "stateDropdown",data_val="true", required = "required" })
@@ -139,17 +146,33 @@
 
             $('#InterestsString').val(interestsList).trigger('change');
 
-            $("#stateDropdown").change(function () {
-                var stateId = $(this).val();
-                $.getJSON("/User/GetCitiesByStateId",
-                    { stateId: stateId },
+            $("#countryDropdown").change(function () {
+                var CountryId = $(this).val();
+                $.getJSON("/User/GetStateByCoutryId",
+                    { CountryId: CountryId },
                     function (data) {
-                        var items = "<option value=''>Select City</option>";
-                        $.each(data, function (index, city) {
-                            items += "<option value='" + city.cityId + "'>" + city.name + "</option>";
+                        var items = "<option value=''>Select State</option>";
+                        $.each(data, function (index, state) {
+                            items += "<option value='" + state.stateId + "'>" + state.name + "</option>";
                         });
-                        $("#cityDropdown").html(items);
+                        $("#stateDropdown").html(items);
+                        $("#cityDropdown").html("<option value=''>Choose city</option>");
                     });
+            });
+
+            $(document).ready(function () {
+                $(document).on('change', '#stateDropdown', function () {
+                    var stateId = $(this).val();
+                    $.getJSON("/User/GetCitiesByStateId",
+                        { stateId: stateId },
+                        function (data) {
+                            var items = "<option value=''>Select City</option>";
+                            $.each(data, function (index, city) {
+                                items += "<option value='" + city.cityId + "'>" + city.name + "</option>";
+                            });
+                            $("#cityDropdown").html(items);
+                        });
+                });
             });
         });
 
