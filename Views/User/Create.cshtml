@@ -4,7 +4,6 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-
 <form id="registrationForm" enctype="multipart/form-data" onsubmit="submitForm(event)">
     @Html.AntiForgeryToken()
     <input type="hidden" id="Id" name="Id" value="@Model?.Id" />
@@ -19,6 +18,12 @@
         <label for="Password" class="col-sm-2 col-form-label">Password</label>
         <div class="col-sm-6">
             <input type="Password" class="form-control" id="Password" name="Password" required value="@Model?.Password" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="Address" class="col-sm-2 col-form-label">Address</label>
+        <div class="col-sm-6">
+            <textarea class="form-control" id="Address" rows="3" required maxlength="100">@Model?.Address</textarea>
         </div>
     </div>
 
@@ -87,19 +92,19 @@
         </div>
     </div>
 
-    @*<div class="row mb-3">
-    <label for="SelectedStateId" class="col-sm-2 col-form-label">State</label>
-    <div class="col-sm-6">
-    @Html.DropDownListFor(model => model.SelectedStateId, new SelectList(Model.States, "StateId", "Name"), "Choose state", new { @class = "form-select", id = "stateDropdown" })
-    </div>
+    <div class="row mb-3">
+        <label for="SelectedStateId" class="col-sm-2 col-form-label">State</label>
+        <div class="col-sm-6">
+            @Html.DropDownListFor(model => model.SelectedStateId, new SelectList(Model.States, "StateId", "Name"), "Choose state", new { @class = "form-select", id = "stateDropdown",data_val="true", required = "required" })
+        </div>
     </div>
 
     <div class="row mb-3">
-    <label for="SelectedCityId" class="col-sm-2 col-form-label">City</label>
-    <div class="col-sm-6">
-    @Html.DropDownListFor(model => model.SelectedCityId, new SelectList(Model.Cities, "CityId", "Name"), "Choose city", new { @class = "form-select",id = "cityDropdown" })
+        <label for="SelectedCityId" class="col-sm-2 col-form-label">City</label>
+        <div class="col-sm-6">
+            @Html.DropDownListFor(model => model.SelectedCityId, new SelectList(Model.Cities, "CityId", "Name"), "Choose city", new { @class = "form-select",id = "cityDropdown"  ,data_val = "true",required = "required" })
+        </div>
     </div>
-    </div>*@
 
     <div class="row mb-3">
         <div class="col-sm-4">
@@ -114,7 +119,7 @@
     <script>
 
         $(document).ready(function () {
-           
+
             var interestsList = @Html.Raw(Json.Serialize(Model?.InterestsString != null ? Model.InterestsString : new List<string>()));
 
             if (!Array.isArray(interestsList)) {
@@ -133,6 +138,19 @@
             });
 
             $('#InterestsString').val(interestsList).trigger('change');
+
+            $("#stateDropdown").change(function () {
+                var stateId = $(this).val();
+                $.getJSON("/User/GetCitiesByStateId",
+                    { stateId: stateId },
+                    function (data) {
+                        var items = "<option value=''>Select City</option>";
+                        $.each(data, function (index, city) {
+                            items += "<option value='" + city.cityId + "'>" + city.name + "</option>";
+                        });
+                        $("#cityDropdown").html(items);
+                    });
+            });
         });
 
         document.addEventListener('DOMContentLoaded', function () {
@@ -146,22 +164,6 @@
             }
         });
         var createOreditURL = '@Url.Action("Create","User")';
-
-                //$(document).ready(function () {
-
-                //    $("#stateDropdown").change(function () {
-                //        var stateId = $(this).val();
-                //        $.getJSON("/User/GetCitiesByStateId",
-                //            { stateId: stateId },
-                //            function (data) {
-                //                var items = "<option value=''>Select City</option>";
-                //                $.each(data, function (index, city) {
-                //                    items += "<option value='" + city.cityId + "'>" + city.name + "</option>";
-                //                });
-                //                $("#cityDropdown").html(items);
-                //            });
-                //    });
-                //});
     </script>
-     <script src="~/js/master-ajax.js" asp-append-version="true"></script>
+    <script src="~/js/master-ajax.js" asp-append-version="true"></script>
     }

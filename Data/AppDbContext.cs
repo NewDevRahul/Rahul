@@ -39,5 +39,6 @@ namespace RoshanDemo1.Data
             optionsBuilder.ConfigureWarnings(warnings =>
                 warnings.Ignore(CoreEventId.NavigationBaseIncludeIgnored));
         }
+
     }
 }

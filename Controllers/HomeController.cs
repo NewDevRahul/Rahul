@@ -30,7 +30,7 @@ namespace RoshanDemo1.Controllers
 
         [HttpPost]
         public IActionResult SaveAnswers(List<int> answers)
-         {
+        {
             
             return RedirectToAction("Index");
         }

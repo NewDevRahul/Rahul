@@ -84,6 +84,9 @@ namespace RoshanDemo1.Controllers
                     existingUser.ImagePath = model.ImagePath;
                     existingUser.Password = model.Password;
                     existingUser.Fruits = model.Fruits;
+                    existingUser.Address= model.Address;
+                    existingUser.SelectedStateId= model.SelectedStateId;
+                    existingUser.SelectedCityId= model.SelectedCityId;
                 }
                 await _dbContext.SaveChangesAsync();
 
@@ -105,6 +108,10 @@ namespace RoshanDemo1.Controllers
             {
                 return NotFound();
             }
+
+            user.States = _dbContext.States.ToList();
+            user.Cities= _dbContext.Cities.Where(c => c.StateId == user.SelectedStateId).ToList();
+
             ViewBag.InterestsList = new List<string> { "Sports", "Music", "Movies" };
 
             return View("Create", user);

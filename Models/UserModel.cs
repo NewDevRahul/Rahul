@@ -9,7 +9,7 @@ namespace RoshanDemo1.Models
         public int? Id { get; set; }
 
         [Required(ErrorMessage = "Username is required")]
-        public string Username {                                                                                                                                                                                                                                                                 get; set; }
+        public string Username { get; set; }
 
         [Required(ErrorMessage = "Please select a role")]
         public string Gender { get; set; }
@@ -28,8 +28,10 @@ namespace RoshanDemo1.Models
 
         public string? ImagePath { get; set; }
 
-        //public int? SelectedStateId { get; set; }
-        //public int? SelectedCityId { get; set; }
+        public int? SelectedStateId { get; set; }
+        public int? SelectedCityId { get; set; }
+
+        public string Address { get; set; }
 
         [NotMapped]
         public List<StateModel>? States { get; set; }
