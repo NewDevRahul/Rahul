@@ -6,12 +6,13 @@
 
 <form id="registrationForm" enctype="multipart/form-data" onsubmit="submitForm(event)">
     @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
     <input type="hidden" id="Id" name="Id" value="@Model?.Id" />
 
     <div class="row mb-3">
         <label for="Username" class="col-sm-2 col-form-label">Username</label>
         <div class="col-sm-6">
-            <input type="text" class="form-control" id="Username" name="Username" required value="@Model?.Username" autocomplete="off" />
+            <input type="text" class="form-control" id="Username" name="Username" required  value="@Model?.Username" autocomplete="off" />
         </div>
     </div>
     <div class="row mb-3">
@@ -29,15 +30,18 @@
 
     <div class="row mb-3">
         <label for="Fruits" class="col-sm-2 col-form-label">Fruits</label>
+
         <div class="col-sm-6">
-            @Html.DropDownListFor(model => model.Fruits, new SelectList(new List<SelectListItem>
-            {
-            new SelectListItem { Text = "Choose fruits", Value = "" },
-            new SelectListItem { Text = "Orange", Value = "Orange", Selected = Model?.Fruits == "Orange" },
-            new SelectListItem { Text = "Apple", Value = "Apple", Selected = Model?.Fruits == "Apple" }
-            }, "Value", "Text"), new { @class = "form-select", required = "required" })
+            <select class="form-select" id="Fruits" name="Fruits" required>
+                <option value="">Choose fruits</option>
+                @foreach (var fruits in ViewBag.Fruits ?? new List<string>())
+                {
+                    <option value="@fruits">@fruits</option>
+                }
+            </select>
         </div>
     </div>
+
 
     <fieldset class="row mb-3">
         <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
@@ -76,18 +80,22 @@
                     <label class="form-check-label" for="hobbies@hobbies">@hobbies</label>
                 </div>
             }
-            <span asp-validation-for="Hobbies" class="text-danger"></span>
         </div>
     </div>
 
     <div class="row mb-3">
         <label class="col-form-label col-sm-2 pt-0" for="profileImage">Profile Image</label>
         <div class="col-sm-6">
-            <input type="file" class="form-control" id="profileImage" required name="profileImage" accept="image/png, image/gif, image/jpeg" />
+            <input type="file" class="form-control" id="profileImage"  name="profileImage" accept="image/png, image/gif, image/jpeg" />
 
             @if (!string.IsNullOrEmpty(Model?.ImagePath))
             {
                 <img src="/@Model.ImagePath" alt="Profile Image" width="50" height="50" />
+                <input type="hidden" id="currentImagePath" name="currentImagePath" value="@Model.ImagePath" />
+            }
+            else
+            {
+                <input type="hidden" id="currentImagePath" name="currentImagePath" value="">
             }
         </div>
     </div>
@@ -120,7 +128,6 @@
     </div>
 
 </form>
-
 
 @section scripts {
     <script>
@@ -175,6 +182,11 @@
                 });
             });
         });
+
+        var selectedFruit = '@Model?.Fruits';
+        if (selectedFruit) {
+            document.getElementById('Fruits').value = selectedFruit;
+        }
 
         document.addEventListener('DOMContentLoaded', function () {
             var interestsArray = @Html.Raw(Json.Serialize(Model?.InterestsString != null ? Model.InterestsString : new List<string>()));

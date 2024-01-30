@@ -35,7 +35,8 @@ namespace RoshanDemo1.Controllers
                 States = _dbContext.States.ToList(),
                 Cities = _dbContext.Cities.ToList()
             };
-         
+
+            ViewBag.Fruits = new List<string> { "Orange", "Apple" };
             ViewBag.InterestsList = new List<string> { "Sports", "Music", "Movies" };
             
             return View(model);
@@ -66,8 +67,8 @@ namespace RoshanDemo1.Controllers
                 }
                 #endregion
 
-                //Here create ralated code if Id=0 
-                if (model.Id == 0 || model.Id == null)
+                
+                if (model.Id == null)
                 {
                     _dbContext.Users.Add(model);
                 }
@@ -113,9 +114,10 @@ namespace RoshanDemo1.Controllers
                 return NotFound();
             }
             user.Country = _dbContext.Country.ToList();
-            user.States = _dbContext.States.Where(c => c.CountryId==user.SelectedCountryId).ToList();
+            user.States = _dbContext.States.Where(c => c.CountryId == user.SelectedCountryId).ToList();
             user.Cities= _dbContext.Cities.Where(c => c.StateId == user.SelectedStateId).ToList();
 
+            ViewBag.Fruits = new List<string> { "Orange", "Apple" };
             ViewBag.InterestsList = new List<string> { "Sports", "Music", "Movies" };
 
             return View("Create", user);

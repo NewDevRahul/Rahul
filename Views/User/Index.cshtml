@@ -1,7 +1,7 @@
 ﻿@model List<UserModel>
+<button type="button" class="btn btn-secondary mb-5" onclick="window.location.href='@Url.Action("Create", "User")'">Add New data</button>
 
-<button type="button" class="btn btn-secondary" onclick="window.location.href='@Url.Action("Create", "User")'">Add New data</button>
-<table class="table">
+<table class="table" id="example">
     <thead>
         <tr>
             <th>UserName</th>
@@ -44,7 +44,15 @@
 
 @section scripts {
     <script>
-        var createOrEditURL = '@Url.Action("Create", "User")';
+
+        $(document).ready(function () {
+            $('#example').DataTable({
+                dom: 'Bfrtip',
+                buttons: [
+                    'excelHtml5'
+                ]
+            });
+        });
 
         $('.deletebtn').on('click', function () {
             var userId = $(this).data('id');
@@ -66,6 +74,5 @@
             }
         }
     </script>
-    <script src="~/js/master-ajax.js" asp-append-version="true"></script>
 }
 

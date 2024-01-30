@@ -11,21 +11,19 @@ namespace RoshanDemo1.Models
 
         [Required(ErrorMessage = "Username is required")]
         public string Username { get; set; }
-
-        [Required(ErrorMessage = "Please select a role")]
+       
         public string Gender { get; set; }
 
         public string Password { get; set; }
 
         public string InterestsString { get; set; }
+       
+        public string Hobbies { get; set; }
 
-        [Required(ErrorMessage = "Please select at least one hobby.")]
-        public string? Hobbies { get; set; }
-
-        public string? Fruits { get; set; }
+        public string Fruits { get; set; }
 
         [NotMapped]
-        public IFormFile ProfileImage { get; set; }
+        public IFormFile? ProfileImage { get; set; }
 
         public string? ImagePath { get; set; }
 

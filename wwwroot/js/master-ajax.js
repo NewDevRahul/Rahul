@@ -33,6 +33,8 @@
         var profileImage = $('#profileImage')[0].files[0];
         if (profileImage) {
             formData.append('profileImage', profileImage);
+        } else {
+            formData.append('ImagePath', $('#currentImagePath').val());
         }
 
         jQuery.ajax({
