@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Hosting;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
@@ -8,12 +9,14 @@ using RoshanDemo1.Data;
 using RoshanDemo1.Models;
 using System.Diagnostics.Metrics;
 
+
 namespace RoshanDemo1.Controllers
 {
     public class UserController : Controller
     {
         private readonly AppDbContext _dbContext;
         private readonly IWebHostEnvironment _webHostEnvironment;
+       
 
         public UserController(AppDbContext dbContext, IWebHostEnvironment webHostEnvironment)
         {
@@ -67,7 +70,7 @@ namespace RoshanDemo1.Controllers
                 }
                 #endregion
 
-                
+               
                 if (model.Id == null)
                 {
                     _dbContext.Users.Add(model);
@@ -81,6 +84,7 @@ namespace RoshanDemo1.Controllers
                         return NotFound();
                     }
                     
+
                     existingUser.Username = model.Username;
                     existingUser.Gender = model.Gender;
                     existingUser.InterestsString = model.InterestsString;
@@ -88,13 +92,13 @@ namespace RoshanDemo1.Controllers
                     existingUser.ImagePath = model.ImagePath;
                     existingUser.Password = model.Password;
                     existingUser.Fruits = model.Fruits;
-                    existingUser.Address= model.Address;
-                    existingUser.SelectedStateId= model.SelectedStateId;
-                    existingUser.SelectedCityId= model.SelectedCityId;
-                    existingUser.SelectedCountryId= model.SelectedCountryId;
+                    existingUser.Address = model.Address;
+                    existingUser.SelectedStateId = model.SelectedStateId;
+                    existingUser.SelectedCityId = model.SelectedCityId;
+                    existingUser.SelectedCountryId = model.SelectedCountryId;
                 }
+                
                 await _dbContext.SaveChangesAsync();
-
                 return Ok(model);
 
             }
@@ -113,6 +117,7 @@ namespace RoshanDemo1.Controllers
             {
                 return NotFound();
             }
+            
             user.Country = _dbContext.Country.ToList();
             user.States = _dbContext.States.Where(c => c.CountryId == user.SelectedCountryId).ToList();
             user.Cities= _dbContext.Cities.Where(c => c.StateId == user.SelectedStateId).ToList();

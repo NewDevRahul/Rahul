@@ -6,11 +6,12 @@ namespace RoshanDemo1.Models
 {
     public class UserModel
     {
-        
         public int? Id { get; set; }
 
         [Required(ErrorMessage = "Username is required")]
         public string Username { get; set; }
+
+        public DateTime? Date { get; set; } 
        
         public string Gender { get; set; }
 
@@ -18,7 +19,7 @@ namespace RoshanDemo1.Models
 
         public string InterestsString { get; set; }
        
-        public string Hobbies { get; set; }
+        public string Hobbies { get; set; } 
 
         public string Fruits { get; set; }
 

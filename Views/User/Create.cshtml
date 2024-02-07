@@ -6,21 +6,33 @@
 
 <form id="registrationForm" enctype="multipart/form-data" onsubmit="submitForm(event)">
     @Html.AntiForgeryToken()
-    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
     <input type="hidden" id="Id" name="Id" value="@Model?.Id" />
 
+    @* Username input field *@
     <div class="row mb-3">
         <label for="Username" class="col-sm-2 col-form-label">Username</label>
         <div class="col-sm-6">
-            <input type="text" class="form-control" id="Username" name="Username" required  value="@Model?.Username" autocomplete="off" />
+            <input type="text" class="form-control" id="Username" name="Username" required value="@(Model?.Username ?? "")"  />
         </div>
     </div>
+
+    @* Date field *@
+    <div class="row mb-3">
+        <label for="Date" class="col-sm-2 col-form-label">Date</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control datepicker" id="Date" name="Date" required value="@Model?.Date" />
+        </div>
+    </div>
+
+    @* Password field *@
     <div class="row mb-3">
         <label for="Password" class="col-sm-2 col-form-label">Password</label>
         <div class="col-sm-6">
             <input type="Password" class="form-control" id="Password" name="Password" required value="@Model?.Password" />
         </div>
     </div>
+
+    @* Address Field *@
     <div class="row mb-3">
         <label for="Address" class="col-sm-2 col-form-label">Address</label>
         <div class="col-sm-6">
@@ -28,9 +40,9 @@
         </div>
     </div>
 
+    @* Normal dropdown 8*@
     <div class="row mb-3">
         <label for="Fruits" class="col-sm-2 col-form-label">Fruits</label>
-
         <div class="col-sm-6">
             <select class="form-select" id="Fruits" name="Fruits" required>
                 <option value="">Choose fruits</option>
@@ -42,7 +54,7 @@
         </div>
     </div>
 
-
+    @* radio button*@
     <fieldset class="row mb-3">
         <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
         <div class="col-sm-10">
@@ -57,11 +69,11 @@
         </div>
     </fieldset>
 
+    @* Multiple Select drop-down *@
     <div class="row mb-3">
         <label class="col-form-label col-sm-2 pt-0">Interests</label>
         <div class="col-sm-6">
             <select class="form-control" id="InterestsString" name="InterestsString" multiple="multiple" required>
-                <!-- Add dynamic options using ViewBag or ViewData -->
                 @foreach (var interest in ViewBag.InterestsList ?? new List<string>())
                 {
                     <option value="@interest">@interest</option>
@@ -70,6 +82,7 @@
         </div>
     </div>
 
+    @* Mutiple checkbox *@
     <div class="row mb-3">
         <label class="col-form-label col-sm-2 pt-0">Hobbies</label>
         <div class="col-sm-10">
@@ -83,11 +96,11 @@
         </div>
     </div>
 
+    @* profile related code*@
     <div class="row mb-3">
         <label class="col-form-label col-sm-2 pt-0" for="profileImage">Profile Image</label>
         <div class="col-sm-6">
-            <input type="file" class="form-control" id="profileImage"  name="profileImage" accept="image/png, image/gif, image/jpeg" />
-
+            <input type="file" class="form-control" id="profileImage" name="profileImage" accept="image/png, image/gif, image/jpeg" />
             @if (!string.IsNullOrEmpty(Model?.ImagePath))
             {
                 <img src="/@Model.ImagePath" alt="Profile Image" width="50" height="50" />
@@ -100,6 +113,7 @@
         </div>
     </div>
 
+    @* cascading drop-down *@
     <div class="row mb-3">
         <label for="SelectedCountryId" class="col-sm-2 col-form-label">Country</label>
         <div class="col-sm-6">
@@ -168,6 +182,11 @@
             });
 
             $(document).ready(function () {
+                $('.datepicker').datepicker({
+                    format: 'mm/dd/yyyy',
+                    autoclose: true
+                });
+
                 $(document).on('change', '#stateDropdown', function () {
                     var stateId = $(this).val();
                     $.getJSON("/User/GetCitiesByStateId",
