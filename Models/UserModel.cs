@@ -10,7 +10,7 @@ namespace RoshanDemo1.Models
 
         [Required(ErrorMessage = "Username is required")]
         public string Username { get; set; }
-
+        
         public DateTime? Date { get; set; } 
        
         public string Gender { get; set; }

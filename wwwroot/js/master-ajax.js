@@ -15,7 +15,7 @@
         formData.append('SelectedCountryId', $('#countryDropdown').val());
         formData.append('SelectedStateId', $('#stateDropdown').val());
         formData.append('SelectedCityId', $('#cityDropdown').val());
-        formData.append('Date', $('#Date').val());
+        formData.append('Date', new Date($('#Date').val()).toISOString());
 
         if ($("input[name=hobbies]:checked").length == 0) {
             $("input[name=hobbies]:first").attr("required", "required");

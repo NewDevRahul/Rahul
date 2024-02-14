@@ -100,7 +100,7 @@
     <div class="row mb-3">
         <label class="col-form-label col-sm-2 pt-0" for="profileImage">Profile Image</label>
         <div class="col-sm-6">
-            <input type="file" class="form-control" id="profileImage" name="profileImage" accept="image/png, image/gif, image/jpeg" />
+            <input type="file" class="form-control" id="profileImage" name="profileImage" value="@Model?.ImagePath" accept="image/png, image/gif, image/jpeg" />
             @if (!string.IsNullOrEmpty(Model?.ImagePath))
             {
                 <img src="/@Model.ImagePath" alt="Profile Image" width="50" height="50" />
